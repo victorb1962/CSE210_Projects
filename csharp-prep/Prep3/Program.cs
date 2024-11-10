@@ -83,41 +83,41 @@ class Program
         repeat = "Y";
         while (repeat == "Y" || repeat == "y")
         {
-        // Add random number generator 
-        Random randomGenerator = new Random();
-        number = randomGenerator.Next(1, 100);
+            // Add random number generator 
+            Random randomGenerator = new Random();
+            number = randomGenerator.Next(1, 100);
 
-        Console.Write("Pick a number between 1 and 100:  ");
-        userGuess = Console.ReadLine();
-        guess = int.Parse(userGuess);
+            Console.Write("Pick a number between 1 and 100:  ");
+            userGuess = Console.ReadLine();
+            guess = int.Parse(userGuess);
 
-        count = 1;
-        while (guess != number)
-        {
-            count++; 
-            if (guess < number)
+            count = 1;
+            while (guess != number)
             {
-                Console.WriteLine("Higher");
-                Console.Write("What is your guess? ");
-                userGuess = Console.ReadLine();
-                guess = int.Parse(userGuess);
+                count++; 
+                if (guess < number)
+                {
+                    Console.WriteLine("Higher");
+                    Console.Write("What is your guess? ");
+                    userGuess = Console.ReadLine();
+                    guess = int.Parse(userGuess);
+                }
+                else if (guess > number)
+                {
+                    Console.WriteLine("Lower");
+                    Console.Write("What is your guess? ");
+                    userGuess = Console.ReadLine();
+                    guess = int.Parse(userGuess);
+                }
             }
-            else if (guess > number)
-            {
-                Console.WriteLine("Lower");
-                Console.Write("What is your guess? ");
-                userGuess = Console.ReadLine();
-                guess = int.Parse(userGuess);
-            }
-        }
-        Console.WriteLine("You guessed it!");
+            Console.WriteLine("You guessed it!");
 
-        // Stretch 1 - Keep track of how many guesses 
-        Console.WriteLine($"You took {count} guesses.");
+            // Stretch 1 - Keep track of how many guesses 
+            Console.WriteLine($"You took {count} guesses.");
 
-        // Stretch 2 - ask the user if they want to play again?
-        Console.Write("Do you want to play again? Y/N ");
-        repeat = Console.ReadLine();
+            // Stretch 2 - ask the user if they want to play again?
+            Console.Write("Do you want to play again? Y/N ");
+            repeat = Console.ReadLine();
         }
     }
 }
