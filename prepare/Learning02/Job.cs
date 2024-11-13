@@ -14,12 +14,13 @@ public class Job
     public int _startYear = 0;
     public int _endYear = 0;
 
-    // A method that displays a person's list of jobs 
+    // A special method, called a constructor that is invoked using the  
+    // new keyword followed by the class name and parentheses.
     public Job()
     {
     }
 
-    // Add a Display method
+    // A method that displays a person's list of jobs
     public void Display()
     {
         Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
