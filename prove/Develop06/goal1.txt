@@ -1,0 +1,5 @@
+10
+Simple Goal;Give a talk;Speak in Sacrament meeting when asked;100;False
+Eternal Goal;Study the scriptures;Study for at least 10 minutes;50;False
+Checklist Goal;Attend the temple;Attend and perform any ordinance;50;False;3;500; 0
+Health Goal;Daily Workout;Workout each day for 1 hour;50;False
